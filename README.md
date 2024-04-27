@@ -22,26 +22,31 @@ To get started with M.A.I.A., follow these steps:
 git clone https://github.com/nnxmms/M.A.I.A.git
 ```
 
-2. Create a virtual environment
+2. Change directory to the downloaded repository
+```bash
+cd M.A.I.A
+```
+
+3. Create a virtual environment
 ```bash
 virtualenv -p python3.11 env
 ```
 
-3. Activate the environment
+4. Activate the environment
 ```bash
 source ./env/bin/activate
 ```
 
-4. Install requirements
+5. Install requirements
 ```bash
 pip install -r requirements.txt
 ```
 
-5. Register at [Groq](https://groq.com/) to obtain a `GROQ_API_KEY`
+6. Register at [Groq](https://groq.com/) to obtain a `GROQ_API_KEY`
 
-6. Create a [programmable search engine](https://programmablesearchengine.google.com/) to get a `GOOGLE_CSE_ID` and `GOOGLE_API_KEY`
+7. Create a [programmable search engine](https://programmablesearchengine.google.com/) to get a `GOOGLE_CSE_ID` and `GOOGLE_API_KEY`
 
-7. Create a `.env` file and update the values
+8. Create a `.env` file and update the values
 ```bash
 cp .env.example .env
 ```
