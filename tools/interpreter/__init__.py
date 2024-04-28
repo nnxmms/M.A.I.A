@@ -15,10 +15,10 @@ class Interpreter(Tool):
         # Initialize Tool
         super().__init__(
             name="Interpreter", 
-            description="Executes any Python script.",
-            usecase="This is useful for when you decide to write and execute some Python code to solve a given problem. The script must always return a string such that you can further work with it.",
+            description="Executes any Python3 script.",
+            usecase="This is useful for when you decide to write and execute some Python3 code to solve a given problem. The script must always return a string such that you can further work with it.",
             parameters={
-                "script": "The Python script that should be executed. This must include all needed imports."
+                "script": "The Python3 script that should be executed. This must include all needed imports."
             }
         )
     
