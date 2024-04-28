@@ -60,6 +60,17 @@ python3 main.py
 > [!WARNING]  
 > M.A.I.A. does not ask for permission when executing code on your machine. Make sure you know what you do!
 
+### Usecases
+☀️ - What is the weather like in Berlin?
+
+🧭 - Check if twitter.com is up.
+
+🖥️ - Do you see any .txt files on my desktop?
+
+🎥 - Convert the showcase.mov video into a .mp4
+
+🇺🇸 - Write a poem about the current president of the USA and save it in a file in my Downloads folder.
+
 ## Tools
 M.A.I.A. can use a variaty of tools. Currently the following tools are implemented:
 
