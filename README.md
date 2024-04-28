@@ -80,11 +80,14 @@ python3 main.py
 ## Tools
 M.A.I.A. can use a variaty of tools. Currently the following tools are implemented:
 
-| Tool          | Description                       |
-|---            |---                                |
-| Bash          | Executes any bash command.        |
-| Google Search | Search the internet using Google. |
-| Interpreter   | Executes any Python script.       |
+| Tool          | Description                                |
+|---            |---                                         |
+| Bash          | Executes any bash command.                 |
+| Google Search | Search the internet using Google.          |
+| Interpreter   | Executes any Python script.                |
+| Nmap          | Network scanning tool.                     |
+| SQLMap        | Automated SQL injection testing.           |
+| ffuf          | Directory and subdomain bruteforcing tool. |
 
 You can easily add new tools using the [Tool](tools/__init__.py) class. Take some of the already existing tools as a guide.
 
