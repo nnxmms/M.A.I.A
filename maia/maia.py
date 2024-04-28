@@ -100,7 +100,7 @@ class MAIA:
         This function prints the welcome message.
         """
         # M.A.I.A
-        for i, line in enumerate(WELCOME_MAIA.splitlines()[1:]):
+        for _, line in enumerate(WELCOME_MAIA.splitlines()[1:]):
             parts = line.split("|")[1:]
             print(
                 colored(parts[0], "green"), 

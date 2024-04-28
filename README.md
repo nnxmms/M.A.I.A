@@ -24,7 +24,7 @@ M.A.I.A. is designed to be a highly advanced language model that can understand 
 To get started with M.A.I.A., follow these steps:
 
 1. Clone the repostiory
-...
+```bash
 git clone https://github.com/nnxmms/M.A.I.A.git
 ```
 
