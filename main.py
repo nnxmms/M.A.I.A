@@ -5,6 +5,7 @@ from maia import MAIA
 
 # Tools
 from tools import Bash
+from tools import Ffuf
 from tools import GoogleSearch
 from tools import Interpreter
 from tools import Nmap
@@ -26,6 +27,7 @@ def main():
             google_api_key=os.environ.get("GOOGLE_API_KEY")
         ),
         Bash(),
+        Ffuf(),
         Interpreter(),
         Nmap(),
         Sqlmap()
