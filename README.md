@@ -14,11 +14,13 @@ M.A.I.A. is designed to be a highly advanced language model that can understand 
 
 🖥️ - **Code Execution:** Since I love the ChatGPT Code Interpreter I implemented it for M.A.I.A. Now it is able to solve match problems, visualize data and test your code. You can also read, write, create and delete files on your machine since M.A.I.A. is able to execute not only Python but also Bash code.
 
+🔍 - **Network Scanning:** M.A.I.A. also includes the Nmap tool for network scanning. You can use it to discover hosts and services on a computer network, thus providing additional functionality for security and network administration.
+
 ## Getting Started
 To get started with M.A.I.A., follow these steps:
 
 1. Clone the repostiory
-```bash
+...
 git clone https://github.com/nnxmms/M.A.I.A.git
 ```
 

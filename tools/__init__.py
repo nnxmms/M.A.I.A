@@ -6,3 +6,4 @@ from tools.tool import Tool
 from tools.bash import Bash
 from tools.googlesearch import GoogleSearch
 from tools.interpreter import Interpreter
+from tools.nmap import Nmap

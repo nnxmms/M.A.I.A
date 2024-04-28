@@ -7,6 +7,7 @@ from maia import MAIA
 from tools import Bash
 from tools import GoogleSearch
 from tools import Interpreter
+from tools import Nmap
 
 # Regular imports
 from dotenv import load_dotenv
@@ -24,7 +25,8 @@ def main():
             google_api_key=os.environ.get("GOOGLE_API_KEY")
         ),
         Bash(),
-        Interpreter()
+        Interpreter(),
+        Nmap()
     ]
 
     # Run M.A.I.A.
