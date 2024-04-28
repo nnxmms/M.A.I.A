@@ -8,6 +8,7 @@ from tools import Bash
 from tools import GoogleSearch
 from tools import Interpreter
 from tools import Nmap
+from tools import Sqlmap
 
 # Regular imports
 from dotenv import load_dotenv
@@ -26,7 +27,8 @@ def main():
         ),
         Bash(),
         Interpreter(),
-        Nmap()
+        Nmap(),
+        Sqlmap()
     ]
 
     # Run M.A.I.A.

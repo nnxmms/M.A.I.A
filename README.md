@@ -16,6 +16,8 @@ M.A.I.A. is designed to be a highly advanced language model that can understand 
 
 🔍 - **Network Scanning:** M.A.I.A. also includes the Nmap tool for network scanning. You can use it to discover hosts and services on a computer network, thus providing additional functionality for security and network administration.
 
+🔐 - **SQL Injection Testing:** SQLMap can be used as well. It's a tool for automated SQL injection testing. You can use it to detect and exploit SQL injection vulnerabilities in web applications, providing an additional layer of security testing.
+
 ## Getting Started
 To get started with M.A.I.A., follow these steps:
 

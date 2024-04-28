@@ -7,3 +7,4 @@ from tools.bash import Bash
 from tools.googlesearch import GoogleSearch
 from tools.interpreter import Interpreter
 from tools.nmap import Nmap
+from tools.sqlmap import Sqlmap
