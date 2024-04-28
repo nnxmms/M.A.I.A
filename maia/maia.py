@@ -14,6 +14,7 @@ import os
 import platform
 import re
 from termcolor import colored
+import subprocess
 
 class MAIA:
 
@@ -112,6 +113,15 @@ class MAIA:
         This function prints a given message in the specified color.
         """
         print(termcolor.colored(message, color))
+    
+    def _execute_bash_command(self, command):
+        """
+        This function executes a bash command and returns the output.
+        """
+        result = subprocess.run(command, shell=True, capture_output=True, text=True)
+        output = result.stdout.strip()
+        error = result.stderr.strip()
+        return error if error else output
     
     def log(self, message):
         """
@@ -221,6 +231,12 @@ class MAIA:
             # Reset conversation
             if user_input == "clear":
                 self._reset()
+                continue
+            
+            # User bash command
+            if user_input.startswith("!"):
+                output = self._execute_bash_command(user_input.split("!")[1])
+                print(f"\n{output}\n")
                 continue
 
             # Query agent
