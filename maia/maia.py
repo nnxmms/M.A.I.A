@@ -155,7 +155,8 @@ class MAIA:
             chat_completion = self.groq_client.chat.completions.create(
                 messages=self.messages,
                 model="llama3-70b-8192",
-                temperature=0
+                temperature=0,
+                max_tokens=1000
             )
             response_text = chat_completion.choices[0].message.content
             response_json = json.loads(self.extract_json(response_text))
