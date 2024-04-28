@@ -111,12 +111,6 @@ class MAIA:
         # Credits
         print(WELCOME_CREDITS.format(version=self._version()))
     
-    def _color_print(self, message, color):
-        """
-        This function prints a given message in the specified color.
-        """
-        print(termcolor.colored(message, color))
-    
     def _execute_bash_command(self, command):
         """
         This function executes a bash command and returns the output.
