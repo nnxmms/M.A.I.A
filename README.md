@@ -89,7 +89,7 @@ M.A.I.A. can use a variaty of tools. Currently the following tools are implement
 | SQLMap        | Automated SQL injection testing.           |
 | ffuf          | Directory and subdomain bruteforcing tool. |
 
-You can easily add new tools using the [Tool](tools/__init__.py) class. Take some of the already existing tools as a guide.
+You can easily add new tools using the [Tool](tools/tool/__init__.py) class. Take some of the already existing tools as a guide.
 
 You can enable and disable tools in the [main.py](main.py) file by including or removing them in the `Initialize tools` section.
 
