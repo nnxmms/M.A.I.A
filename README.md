@@ -18,6 +18,8 @@ M.A.I.A. is designed to be a highly advanced language model that can understand 
 
 🔐 - **SQL Injection Testing:** SQLMap can be used as well. It's a tool for automated SQL injection testing. You can use it to detect and exploit SQL injection vulnerabilities in web applications, providing an additional layer of security testing.
 
+🔍 - **Directory and Subdomain Bruteforcing:** M.A.I.A. is able to use the ffuf tool for directory and subdomain bruteforcing. You can use it to discover hidden files and directories on a web server, as well as subdomains of a target domain, providing additional functionality for web application testing and reconnaissance.
+
 ## Getting Started
 To get started with M.A.I.A., follow these steps:
 
