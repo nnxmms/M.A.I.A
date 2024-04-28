@@ -6,6 +6,9 @@ from maia.prompts import *
 # Messages
 from maia.messages import *
 
+# Shortcuts
+from shortcuts import SHORTCUTS
+
 import datetime
 import getpass
 from groq import Groq
@@ -232,6 +235,10 @@ class MAIA:
             if user_input == "clear":
                 self._reset()
                 continue
+
+            # User shortcuts
+            if user_input in SHORTCUTS:
+                user_input = SHORTCUTS[user_input]
             
             # User bash command
             if user_input.startswith("!"):
