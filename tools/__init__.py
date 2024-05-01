@@ -8,4 +8,5 @@ from tools.ffuf import Ffuf
 from tools.googlesearch import GoogleSearch
 from tools.interpreter import Interpreter
 from tools.nmap import Nmap
+from tools.pythondeveloper import PythonDeveloper
 from tools.sqlmap import Sqlmap

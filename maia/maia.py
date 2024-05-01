@@ -15,7 +15,6 @@ from groq import Groq
 import json
 import os
 import platform
-import re
 from termcolor import colored
 import subprocess
 

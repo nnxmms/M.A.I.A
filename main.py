@@ -9,6 +9,7 @@ from tools import Ffuf
 from tools import GoogleSearch
 from tools import Interpreter
 from tools import Nmap
+from tools import PythonDeveloper
 from tools import Sqlmap
 
 # Regular imports
@@ -27,10 +28,8 @@ def main():
             google_api_key=os.environ.get("GOOGLE_API_KEY")
         ),
         Bash(),
-        Ffuf(),
         Interpreter(),
-        Nmap(),
-        Sqlmap()
+        PythonDeveloper()
     ]
 
     # Run M.A.I.A.
