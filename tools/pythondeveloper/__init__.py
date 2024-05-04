@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-import subprocess
-
+import getpass
 from groq import Groq
 import os
+import platform
 from tools import Tool
 from tools.pythondeveloper.prompts import *
 import uuid
@@ -20,7 +20,7 @@ class PythonDeveloper(Tool):
         super().__init__(
             name="Python Developer", 
             description="Writes Python code based on your description.",
-            usecase="This is useful for when you need to write Python code. You can describe the task and Python Developer will implement it for you.",
+            usecase="This is useful for when you need to write Python code. You can describe the task and Python Developer will implement it for you. If you refer to local files or locations you must include absolute paths to these files or locations in the task description. This is mandatory.",
             parameters={
                 "task": "Your specific task description of what should be implemented. Always start with 'Please implement ...'"
             }
@@ -39,8 +39,14 @@ class PythonDeveloper(Tool):
         Initialize the conversation with Llama-3:instruct.
         """
         return [
-            {"role": "system", "content": PYTHON_DEVELOPER},
+            {"role": "system", "content": PYTHON_DEVELOPER.format(system_information=self._get_system_information())},
         ]
+    
+    def _get_system_information(self):
+        """
+        This function returns some information about the system M.A.I.A is operating on.
+        """
+        return f"Username: {getpass.getuser()}\nCWD: {os.getcwd()}\nSHELL: {os.environ.get('SHELL')}\nOS: {platform.system()}"
     
     def run(self, task):
         """

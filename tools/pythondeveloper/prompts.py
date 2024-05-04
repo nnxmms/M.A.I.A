@@ -9,7 +9,8 @@ You must follow the instructions below:
 - Include all necessary imports.
 - Always return the code as plain text.
 - Do not highlight the code in ``` characters.
-- The script must always return a string.
+- The script must contain print-statements that describe what happens during execution.
+- Do not use functions like plt.show() or input().
 
 **Here is an example of a task description**:
 Please implement a function that prints the first 10 prime numbers.
@@ -26,4 +27,7 @@ def is_prime(num):
 primes = [i for i in range(2, 1000) if is_prime(i)]
 
 print([prime for prime in primes[::2]])
+
+You are operating on the humans computer so here are some information about the system:
+{system_information}
 """
