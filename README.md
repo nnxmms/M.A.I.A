@@ -2,13 +2,15 @@
 
 ![Showcase](./assets/showcase.gif)
 
+Further and more complex showcases can be found [here](./assets/).
+
 ## Introduction
 M.A.I.A. (short for **M**aster **A**rtificial **I**ntelligence **A**ssistant) is an open-source conversational AI project inspired by ChatGPT-4. 
 
 M.A.I.A. is designed to be a highly advanced language model that can understand and respond to human input in a conversational manner. What sets M.A.I.A. apart from normal large language models is its ability to access the internet and execute code, making it a powerful tool for a wide range of applications.
 
 ## Features
-👥 - **Conversational AI:** Since M.A.I.A. is powered by Llama-3 you can have normal conversations with it like you have them with regular LLMs.
+👥 - **Conversational AI:** Sincse M.A.I.A. is powered by Llama-3 you can have normal conversations with it like you have them with regular LLMs.
 
 🌍 - **Internet Access:** M.A.I.A. can use the Google Search tool to retrieve up-to-date information from the internet. 
 
